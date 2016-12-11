@@ -7,6 +7,136 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+#myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+
+#myImg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+#myImg4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg4:hover {opacity: 0.7;}
+
+
+#myImg5 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg5:hover {opacity: 0.7;}
+
+#myImg6 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg6:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
 </style>
 <body class="w3-light-grey">
 
@@ -33,24 +163,108 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+64211475147</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p class="w3-large"><b><i class="fa fa-user-circle-o fa-fw w3-margin-right w3-text-teal"></i>Personal Qualities</b></p> 
+          <li>Very good communicator</li>
+          <li>Self-motivated and hard working</li>
+          <li>Friendly and approachable personality and a talented sportsman</li>
+          <li>Committed to professional development</li>
+
+
+           <p class="w3-large"><b><i class="fa fa-bicycle fa-fw w3-margin-right w3-text-teal"></i>Hobbies</b></p>
+          <li>Photography</li>
+          <li>Football</li>
+          <li>Travel</li>
+          
+          <p class="w3-large"><b><i class="fa fa-file-code-o fa-fw w3-margin-right w3-text-teal"></i>Programming Skills</b></p>
+          <p>Java</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
+              <div class="w3-center w3-text-white">90%</div>
+            </div>
+          </div>
+
+          <p>PHP</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:95%">
+              <div class="w3-center w3-text-white">90%</div>
+            </div>
+          </div>
+
+          <p>HTML5</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%">
+              <div class="w3-center w3-text-white">100%</div>
+            </div>
+          </div>
+
+          <p>CSS3</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%">
+              <div class="w3-center w3-text-white">100%</div>
+            </div>
+          </div>
+
+          <p>Javascript</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
+              <div class="w3-center w3-text-white">90%</div>
+            </div>
+          </div>
+  
+          <p>Mobile App Development</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:85%">
+              <div class="w3-center w3-text-white">90%</div>
+            </div>
+          </div>
+
+          <p>Databases</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:95%">
+              <div class="w3-center w3-text-white">95%</div>
+            </div>
+          </div>
+
+          <p>Wordpress Theme Development</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:95%">
+              <div class="w3-center w3-text-white">95%</div>
+            </div>
+          </div>
+
+
+          <br>
+
+          <p class="w3-large"><b><i class="fa fa-plus fa-fw w3-margin-right w3-text-teal"></i>Other Skills</b></p>
           <p>Adobe Photoshop</p>
           <div class="w3-progress-container w3-round-xlarge w3-small">
             <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
               <div class="w3-center w3-text-white">90%</div>
             </div>
           </div>
-          <p>Photography</p>
+          <p>Mircosoft Office Suite</p>
           <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%">
+              <div class="w3-center w3-text-white">1000%</div>
+            </div>
+          </div>
+          <p>Linux</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:98%">
+              <div class="w3-center w3-text-white">98%</div>
+            </div>
+          </div>
+         <p>Windows</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%">
+              <div class="w3-center w3-text-white">100%</div>
             </div>
           </div>
 
-          <p>Media</p>
+          <p>Content Management Systems - Wordpress/Joomla/Shopify</p>
           <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:50%">
-              <div class="w3-center w3-text-white">50%</div>
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:95%">
+              <div class="w3-center w3-text-white">95%</div>
             </div>
           </div>
           <br>
@@ -65,9 +279,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
           </div>
           <br>
+
+
+
         </div>
+
+
       </div><br>
 
+      
     <!-- End Left Column -->
     </div>
 
@@ -131,6 +351,96 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p>Bachelor Degree in Information Sciences majoring in Software Engineering</p><br>
         </div>
       </div>
+<br>
+            <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-camera fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Photography</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Sweden</b></h5>
+
+            <!-- Trigger the Modal -->
+            <img id="myImg" src="images/IMG_20160610_004409.jpg" alt="Gavle, Sweden" width="250" height="200">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+
+            <!-- Trigger the Modal -->
+            <img id="myImg2" src="images/IMG_20160615_182519.jpg" alt="Gavle, Sweden" width="250" height="200">
+            
+             <!-- The Modal -->
+            <div id="myModal2" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img02">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption2"></div>
+            </div>
+
+                  <!-- Trigger the Modal -->
+            <img id="myImg3" src="images/IMG_20160615_183130.jpg" alt="Stockholm, Sweden" width="250" height="200">
+            
+             <!-- The Modal -->
+            <div id="myModal3" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img03">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption3"></div>
+            </div>
+
+                              <!-- Trigger the Modal -->
+            <img id="myImg4" src="images/IMG_20160615_184545.jpg" alt="Stockholm, Sweden" width="250" height="200">
+            
+             <!-- The Modal -->
+            <div id="myModal4" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img04">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption4"></div>
+            </div>
+
+      <hr>
+                <h5 class="w3-opacity"><b>Dubai, Emirates</b></h5>
+
+              <!-- Trigger the Modal -->
+            <img id="myImg5" src="images/IMG_20160724_033156.jpg" alt="Souk Al Bahar, Dubai, Emirates" width="250" height="200">
+            
+             <!-- The Modal -->
+            <div id="myModal5" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img05">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption5"></div>
+            </div>
+
+                          <!-- Trigger the Modal -->
+            <img id="myImg6" src="images/IMG_20160724_040832.jpg" alt="Dubai Mall" width="250" height="200">
+            
+             <!-- The Modal -->
+            <div id="myModal6" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal6').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img06">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption6"></div>
+            </div>
+
+
+
+        </div>
+<br><br><br>
 
     <!-- End Right Column -->
     </div>
@@ -143,16 +453,89 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
   <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-text-indigo w3-large"></i>
-  <i class="fa fa-instagram w3-hover-text-purple w3-large"></i>
-  <i class="fa fa-snapchat w3-hover-text-yellow w3-large"></i>
-  <i class="fa fa-pinterest-p w3-hover-text-red w3-large"></i>
-  <i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i>
-  <i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i>
+  <a href="https://twitter.com/ahmadkhudeish" target="_blank"><i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i></a>
+  <a href="https://nz.linkedin.com/in/ahmad-khudeish-92325730" target="_blank"><i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i></a>
+  <a href="https://github.com/ahmadkhudeish" target="_blank"><i class="fa fa-github w3-hover-text-light-blue w3-large"></i></a>
+
 <br><br><br>
 </footer>
 
 
 </body>
+
+<script type="text/javascript">
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+var img2 = document.getElementById('myImg2');
+var modalImg2 = document.getElementById("img02");
+var captionText2 = document.getElementById("caption2");
+
+  img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+var img3 = document.getElementById('myImg3');
+var modalImg3 = document.getElementById("img03");
+var captionText3 = document.getElementById("caption3");
+
+  img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  var img4 = document.getElementById('myImg4');
+var modalImg4 = document.getElementById("img04");
+var captionText4 = document.getElementById("caption4");
+
+  img4.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = img4.src;
+    captionText.innerHTML = this.alt;
+  }
+
+
+  var img5 = document.getElementById('myImg5');
+var modalImg5 = document.getElementById("img05");
+var captionText5 = document.getElementById("caption5");
+
+  img5.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = img5.src;
+    captionText.innerHTML = this.alt;
+  }
+
+    var img6 = document.getElementById('myImg6');
+var modalImg6 = document.getElementById("img06");
+var captionText6 = document.getElementById("caption6");
+
+  img6.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = img6.src;
+    captionText.innerHTML = this.alt;
+  }
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 </html>
 
